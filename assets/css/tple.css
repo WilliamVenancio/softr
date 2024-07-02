@@ -1,0 +1,545 @@
+body {
+    background-color: rgb(248, 239, 239);
+}
+
+header {
+    font-size: 30px;
+    background-color: rgb(98, 236, 151);
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    margin: 50px auto;
+    width: 1165px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+main {
+    width: 1165px;
+    background-color: white;
+    margin: 50px auto;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(18, 60px);
+    grid-template-rows: repeat(7, 60px) 30px repeat(2, 60px);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: relative;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main>div:hover {
+    background-color: rgba(246, 244, 244, 0.897);
+}
+main>div>article>div{
+    padding: 3px;
+    font-size: 20px;
+    height: 70px;
+    width: 230px;
+    margin: 5px;
+} 
+
+.left{
+    float:left; 
+}
+
+.rigth{
+    float: right;
+}
+
+main>div>article>section{
+    margin-bottom: 40px;
+    text-align: top;
+    background-color: rgb(141, 255, 141);
+    border-radius: 10px;
+    gap: 5px;
+    
+}
+
+main>div>article {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    background-color: rgb(94, 141, 56);
+    top: 20px;
+    left: 187px;
+    display: none;
+    padding: 40px;
+    color: black;
+    font-size: 30px;
+}
+
+main>div:hover article {
+    display: block;
+}
+
+#simbolo{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: hotpink;
+}
+#numeroatomico{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: hotpink;
+}
+#massaatomica{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: hotpink;
+}
+#classe{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: hotpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main>div>h2 {
+    margin: 0;
+    text-align: center;
+}
+
+main>div>span {
+    font-size: 15px;
+    display: block;
+    padding: 3px;
+}
+
+#nao-metal::before {
+    /* color: var(--nao-metal); */
+    background-color: MediumSpringGreen;
+}
+
+#gas-nobre::before {
+    color: var(--gas-nobre);
+    background-color: SpringGreen;
+}
+
+#metal-alcalino::before {
+    color: var(--metal-alcalino);
+    background-color: PaleGreen;
+}
+
+#metal-alcalino-terroso::before {
+    color: var(--metal-alcalino-terroso);
+    background-color: LightGreen;
+}
+
+#semimetal::before {
+    color: var(--semimetal);
+    background-color: DarkSeaGreen;
+}
+
+#halogenio::before {
+    color: var(--halogenio);
+    background-color: MediumSeaGreen;
+}
+
+#outros-metais::before {
+    color: var(--outros-metais);
+    background-color: rgb(62, 243, 140);
+}
+
+#metal-transicao::before {
+    color: var(--metal-transicao);
+    background-color: rgb(20, 248, 20);
+}
+
+#lantanideo::before {
+    color: var(--lantanideo);
+    background-color: rgb(89, 219, 89);
+}
+
+#actinidio::before {
+    color: var(--actinidio);
+    background-color: rgb(37, 240, 37);
+}
+
+
+
+.nao-metal {
+    color: var(--nao-metal);
+    background-color: MediumSpringGreen;
+}
+
+.gas-nobre {
+    color: var(--gas-nobre);
+    background-color: SpringGreen;
+}
+
+.metal-alcalino {
+    color: var(--metal-alcalino);
+    background-color: PaleGreen;
+}
+
+.metal-alcalino-terroso {
+    color: var(--metal-alcalino-terroso);
+    background-color: LightGreen;
+}
+
+.semimetal {
+    color: var(--semimetal);
+    background-color: DarkSeaGreen;
+}
+
+.halogenio {
+    color: var(--halogenio);
+    background-color: MediumSeaGreen;
+}
+
+.outros-metais {
+    color: var(--outros-metais);
+    background-color: rgb(62, 243, 140);
+}
+
+.metal-transicao {
+    color: var(--metal-transicao);
+    background-color: rgb(20, 248, 20);
+}
+
+.lantanideo {
+    color: var(--lantanideo);
+    background-color: rgb(89, 219, 89);
+}
+
+.actinidio {
+    color: var(--actinidio);
+    background-color: rgb(37, 240, 37);
+}
+
+.group_header_defount {
+    background-color: rgb(206, 198, 198);
+}
+
+
+/* 
+:root {
+    --hidrogenio: #4c90c9;
+    --nao-metais: #6ACCCB;
+    --gases-nobres: #FA785C;
+    --metais-alcalinos: #0EB075;
+    --metais-transicao: #FF9A42;
+    --outros-metais: #c553ae;
+    --lantanideos: #ffcd28;
+    --metais-alcalinos-terrosos: #62d339;
+    --semi-metais: #fc9db2;
+    --halogenios: #00AFF1;
+    --actinideos: #905A5D;
+    --cor-body: rgb(0, 0, 0);
+    --titulo: rgb(255, 255, 255);
+}
+ */
+
+
+
+
+
+
+/* configs da tabela */
+main>div:nth-child(2) {
+    grid-column-start: 18;
+}
+
+main>div:nth-child(5) {
+    grid-column: 13;
+}
+
+main>div:nth-child(13) {
+    grid-column: 13;
+}
+
+main>div:nth-child(91) {
+    grid-column: 13;
+}
+
+main>div:nth-child(72) {
+    grid-column-start: 4;
+    /* grid-row-start: 9; */
+}
+
+main>div:nth-child(104) {
+    grid-column-start: 4;
+    /* grid-row-start: 9; */
+}
+
+
+main>div:nth-child(57) {
+    grid-column-start: 4;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(58) {
+    grid-column-start: 5;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(59) {
+    grid-column-start: 6;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(60) {
+    grid-column-start: 7;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(61) {
+    grid-column-start: 8;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(62) {
+    grid-column-start: 9;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(63) {
+    grid-column-start: 10;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(64) {
+    grid-column-start: 11;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(65) {
+    grid-column-start: 12;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(66) {
+    grid-column-start: 13;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(67) {
+    grid-column-start: 14;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(68) {
+    grid-column-start: 15;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(69) {
+    grid-column-start: 16;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(70) {
+    grid-column-start: 17;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(71) {
+    grid-column-start: 18;
+    grid-row-start: 9;
+}
+
+main>div:nth-child(89) {
+    grid-column-start: 4;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(90) {
+    grid-column-start: 5;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(91) {
+    grid-column-start: 6;
+    grid-row-start: 10;
+}
+
+
+main>div:nth-child(92) {
+    grid-column-start: 7;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(93) {
+    grid-column-start: 8;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(94) {
+    grid-column-start: 9;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(95) {
+    grid-column-start: 10;
+    grid-row-start: 10;
+}
+
+
+main>div:nth-child(96) {
+    grid-column-start: 11;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(97) {
+    grid-column-start: 12;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(98) {
+    grid-column-start: 13;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(99) {
+    grid-column-start: 14;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(100) {
+    grid-column-start: 15;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(101) {
+    grid-column-start: 16;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(102) {
+    grid-column-start: 17;
+    grid-row-start: 10;
+}
+
+main>div:nth-child(103) {
+    grid-column-start: 18;
+    grid-row-start: 10;
+}
+
+/* fim das configs da tabela */
+
+
+
+label {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.list {
+    color: rgb(0, 0, 0);
+    flex-basis: 100%;
+    line-height: 1.25;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.list:before {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(255, 255, 255);
+    border: .125em solid;
+    border-radius: .125rem;
+    margin-right: .5em;
+    position: relative;
+    top: .25em;
+}
+
+#ullist {
+    justify-content: center;
+}
+
+.list {
+    flex-basis: auto;
+    margin-bottom: 0;
+}
+
+.list+.list {
+    margin-left: 2em;
+}
+
+
+
+#titulo {
+    font-size: 90px;
+    color: rgb(41, 167, 10);
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#meunome {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#legendas {
+    font-size: 50px;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: auto;
+}
+
+
+section {
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+td {
+    border: 3px solid;
+    border-radius: 7px;
+    width: 100px;
+    height: 70px;
+    background-color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+table {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0 auto;
+    z-index: 1;
+}

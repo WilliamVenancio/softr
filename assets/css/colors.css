@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.fontfamily {
+    font-family: 'Outfit', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.fontsizep {
+    font-size: 15px;
+}
+
+
+.fontTheme {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.LxMainThemeColor {
+    background-color: #25c417 !important;
+}
+
+.butonThemecolor {
+    background-color: #25c417 !important;
+}
+
+.butonSeconcolor {
+    background-color: #1df009 !important;
+}
+
+.textPcolor {
+    color: #ffffff !important;
+}
+
+.textPcolor2 {
+    color: #25c417 !important;
+}
